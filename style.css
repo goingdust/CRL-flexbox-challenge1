@@ -39,7 +39,7 @@ h1 {
     margin: 0 auto;
 }
 
-.row {
+.row1, .row2 {
     /* display: flex => flex container */
     display: flex;
 
@@ -47,9 +47,30 @@ h1 {
     /* gap: 100px; */
 }
 
+.row1 h2 {
+    color: #87629A;
+}
+
+.row2 {
+    color: white;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .col {
     /* these are now flex items */
     width: 100%;
+    text-align: center;
+    margin: 2.5em auto;
+}
+
+.col + .col {
+    margin-left: 1.5em;
+}
+
+.container-bottom {
+    background-color: #136C72;
 }
 
 .hero {
